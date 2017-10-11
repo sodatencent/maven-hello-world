@@ -12,9 +12,5 @@ stages:
     # 向构建主机安装SODA提供的企业签名证书
     - pwd
     - ls
-    - cat external/test.txt
-    - cat external1/branch.txt
-    - cat externalHttp/test.txt
-    - plugin_entcert
-    - plugin_unity3d --version 5.5.1f1
-    - plugin_xcode
+    - echo "Hello World"
+
