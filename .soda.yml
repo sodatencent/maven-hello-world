@@ -13,4 +13,5 @@ stages:
     - pwd
     - ls
     - echo "Hello World"
+    - echo #{mysql.password}
 
