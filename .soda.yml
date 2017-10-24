@@ -1,0 +1,16 @@
+# 工程源码库该分支路径根目录不存在.soda.yml文件
+# 要启用SODA构建功能，您可以直接拷贝该模版脚本文件内容保存到该分支路径根目录下，
+# 并命名为.soda.yml
+# 您也可以直接页面左侧的“保存构建脚本到源码库”按钮自动提交该分支
+
+# SODA Unity3D引擎游戏客户端工程标准构建模版
+from: mac
+
+stages:
+  build:
+    # 使用Unity3D插件，该插件自动生成构建入口静态方法
+    - plugin_unity3d --version latest
+    # 使用企业签名证书插件，该插件自动安装企业签名证书
+    - plugin_entcert
+    # 使用XCode插件
+    - plugin_xcode
