@@ -13,4 +13,4 @@ stages:
     # 使用企业签名证书插件，该插件自动安装企业签名证书
     - plugin_entcert
     # 使用XCode插件
-    - plugin_xcode
+    - plugin_xcodexxx
